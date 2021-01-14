@@ -1,8 +1,200 @@
-/*
-Colors:
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 10px;
+    line-height: 3.5em;
+    font-weight: 300;
+    color: 1a1a1a;
+    height: 100vh;
+}
+h1 {
+    font-size: 6em;
+    justify-self: center;
+    align-self: center;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 5em;
+    text-align: start;
+    text-transform: uppercase;
+    line-height: 4em;
+    text-decoration: underline;
+}
 
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
+h3 {
+    font-size: 3em;
+    line-height: 1em;
+    text-decoration: underline;
+}
 
-*/
+h4 {
+    font-size: 2em;
+    letter-spacing: 0.4px;
+    margin-bottom: 15px;
+    line-height: 1em;
+}
+
+h5 {
+    font-size: 1.2em;
+    line-height: 1em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+p {
+    font-size: 1.8em;
+}
+.nav-bar {
+    background-color: #fff;
+    padding: 14px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-bar > img {
+    height: 40px;
+}
+.nav-bar a {
+    font-size: 2em;
+    text-decoration: none;
+    color: black;
+}
+.nav-bar ul {
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-bar ul li {
+    list-style-type: none;
+    text-align: center;
+}
+.header {
+    background-image: url('../images/landing.jpg');
+    background-position: 0 0;
+    background-size: cover;
+    height: 55%;
+    padding-top: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+.header p {
+    align-self: center;
+}
+
+#infos {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly;
+    margin: 0 100px; */
+}
+#infos > h3 {
+    text-align: center;
+}
+#infos > .infos-cont {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 40px;
+}
+
+#infos img {
+    width: 180px;
+    height: 180px;
+}
+.container {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+#app {
+    background-color: #00b172;
+    color: #fff;
+    margin: 0 20px;
+}
+#app > .app.cont {
+    display: flex;
+    flex-direction: column;
+}
+.app-cont > h3 {
+    padding: 20px 10px;
+}
+#app > .app-cont > div > article {
+    flex-direction: column;
+}
+.small-cont {
+    display: flex;
+    justify-content: space-around;
+}
+.article-cont {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+    padding: s;
+}
+#app img {
+    width: 80px;
+    height: 80px;
+    align-self: center;
+}
+#app aside img {
+    width: 100%;
+    height: 500px;
+}
+@media only screen and (max-width: 992px) {
+    h1 {
+        font-size: 6em;
+    }
+
+    .nav-bar a {
+        font-size: 1.8em;
+    }
+    #infos img {
+        width: 120px;
+        height: 90px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 4em;
+    }
+    h3 {
+        font-size: ;
+    }
+
+    .nav-bar a {
+        font-size: 1.4em;
+    }
+    #infos img {
+        width: 90px;
+        height: 90px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .infos-cont {
+        flex-direction: column;
+        align-items: center;
+    }
+    .small-cont {
+        flex-direction: column;
+        align-items: center;
+    }
+    #app img {
+        width: 60px;
+        height: 60px;
+    }
+    #app aside img {
+        margin-top: 50px;
+        height: 300px;
+    }
+}
